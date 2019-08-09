@@ -7,49 +7,46 @@
 //
 
 #import "Pizza.h"
-​
-​
+
 @implementation Pizza
-​
-- (instancetype)initWithSize: (PizzaSize) size andToppings: (NSArray<NSString *> *) toppings
+- (instancetype)initWithSize: (PizzaSize) size andToppings :(NSArray *) toppings
 {
     self = [super init];
     if (self) {
-        _size = size;
+        _size = size ;
         _toppings = toppings;
     }
     return self;
 }
-​
-- (NSString *)description
-{
-    NSString *toppings;
-    if (_toppings.count > 0) {
-        toppings = [_toppings componentsJoinedByString:@" "];
-    } else {
-        toppings = @"no toppings";
-    }
-    return [NSString stringWithFormat:@"Pizza - %d size and toppings: %@", _size, toppings];
++(Pizza *) largePepperoni {
+    return  [[Pizza alloc]initWithSize:LARGE andToppings:@[@"pepperoni", @"ham" ,@"cheese"]];
 }
-​
-+ (PizzaSize) sizeFromString: (NSString *) str
-{
-    NSString *lowered = str.lowercaseString;
-    if ([lowered isEqualToString:@"small"]) {
++(Pizza *) meatLoversWithSize :(PizzaSize) size {
+    return  [[Pizza alloc]initWithSize:size andToppings:@[@"meat", @"ham" ,@"cheese"]];
+}
+
++(PizzaSize) sizeFromString : (NSString *) str{
+    NSString *lowerd= str.lowercaseString;
+    if([lowerd isEqualToString:@"small"]){
         return SMALL;
-    } else if ([lowered isEqualToString:@"medium"]) {
+    }
+    else if([lowerd isEqualToString:@"medium"]){
         return MEDIUM;
-    } else {
+    }
+    else {
         return LARGE;
     }
 }
-​
-+ (Pizza *)largePepperoni{
-    return [[Pizza alloc] initWithSize:LARGE andToppings:@[@"Pepperoni", @"Ham", @"Cheese"]];
+- (NSString *)description
+{
+    NSString *toppings;
+    if (_toppings.count > 0){
+        toppings = [_toppings componentsJoinedByString:@", "];
+    }
+    else {
+        toppings = @"no toppings";
+    }
+    return [NSString stringWithFormat:@"Pizza - %d size and toppings: %@", _size , toppings];
 }
-​
-+ (Pizza *)meatLoverWithSize: (PizzaSize) size{
-    return [[Pizza alloc] initWithSize:size andToppings:@[@"Chicken", @"Beef", @"Pork"]];
-}
-​
+
 @end

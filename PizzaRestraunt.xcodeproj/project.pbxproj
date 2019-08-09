@@ -10,6 +10,10 @@
 		04443CCA22FB3347009F7171 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04443CC922FB3347009F7171 /* main.m */; };
 		04443CD222FB335D009F7171 /* Pizza.m in Sources */ = {isa = PBXBuildFile; fileRef = 04443CD122FB335D009F7171 /* Pizza.m */; };
 		04443CEB22FB4109009F7171 /* Kitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 04443CEA22FB4109009F7171 /* Kitchen.m */; };
+		04443D8022FDCF68009F7171 /* DeliveryCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04443D7F22FDCF68009F7171 /* DeliveryCar.m */; };
+		04443D8322FDCFC5009F7171 /* DeliveryService.m in Sources */ = {isa = PBXBuildFile; fileRef = 04443D8222FDCFC5009F7171 /* DeliveryService.m */; };
+		04443D8622FDD147009F7171 /* Kei.m in Sources */ = {isa = PBXBuildFile; fileRef = 04443D8522FDD147009F7171 /* Kei.m */; };
+		04443D8922FDD20E009F7171 /* Sam.m in Sources */ = {isa = PBXBuildFile; fileRef = 04443D8822FDD20E009F7171 /* Sam.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +35,14 @@
 		04443CD122FB335D009F7171 /* Pizza.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pizza.m; sourceTree = "<group>"; };
 		04443CE922FB4109009F7171 /* Kitchen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kitchen.h; sourceTree = "<group>"; };
 		04443CEA22FB4109009F7171 /* Kitchen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kitchen.m; sourceTree = "<group>"; };
+		04443D7E22FDCF68009F7171 /* DeliveryCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeliveryCar.h; sourceTree = "<group>"; };
+		04443D7F22FDCF68009F7171 /* DeliveryCar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeliveryCar.m; sourceTree = "<group>"; };
+		04443D8122FDCFC5009F7171 /* DeliveryService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeliveryService.h; sourceTree = "<group>"; };
+		04443D8222FDCFC5009F7171 /* DeliveryService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeliveryService.m; sourceTree = "<group>"; };
+		04443D8422FDD147009F7171 /* Kei.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kei.h; sourceTree = "<group>"; };
+		04443D8522FDD147009F7171 /* Kei.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kei.m; sourceTree = "<group>"; };
+		04443D8722FDD20E009F7171 /* Sam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sam.h; sourceTree = "<group>"; };
+		04443D8822FDD20E009F7171 /* Sam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sam.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +80,14 @@
 				04443CD122FB335D009F7171 /* Pizza.m */,
 				04443CE922FB4109009F7171 /* Kitchen.h */,
 				04443CEA22FB4109009F7171 /* Kitchen.m */,
+				04443D7E22FDCF68009F7171 /* DeliveryCar.h */,
+				04443D7F22FDCF68009F7171 /* DeliveryCar.m */,
+				04443D8122FDCFC5009F7171 /* DeliveryService.h */,
+				04443D8222FDCFC5009F7171 /* DeliveryService.m */,
+				04443D8422FDD147009F7171 /* Kei.h */,
+				04443D8522FDD147009F7171 /* Kei.m */,
+				04443D8722FDD20E009F7171 /* Sam.h */,
+				04443D8822FDD20E009F7171 /* Sam.m */,
 			);
 			path = PizzaRestraunt;
 			sourceTree = "<group>";
@@ -129,7 +149,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				04443CD222FB335D009F7171 /* Pizza.m in Sources */,
+				04443D8922FDD20E009F7171 /* Sam.m in Sources */,
 				04443CCA22FB3347009F7171 /* main.m in Sources */,
+				04443D8322FDCFC5009F7171 /* DeliveryService.m in Sources */,
+				04443D8622FDD147009F7171 /* Kei.m in Sources */,
+				04443D8022FDCF68009F7171 /* DeliveryCar.m in Sources */,
 				04443CEB22FB4109009F7171 /* Kitchen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
